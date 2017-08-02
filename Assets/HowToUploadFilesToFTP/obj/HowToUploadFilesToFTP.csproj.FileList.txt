@@ -1,0 +1,8 @@
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\HowToUploadFilesToFTP.Form1.resources
+obj\Debug\HowToUploadFilesToFTP.Properties.Resources.resources
+obj\Debug\HowToUploadFilesToFTP.csproj.GenerateResource.Cache
+bin\Debug\HowToUploadFilesToFTP.exe
+bin\Debug\HowToUploadFilesToFTP.pdb
+obj\Debug\HowToUploadFilesToFTP.exe
+obj\Debug\HowToUploadFilesToFTP.pdb

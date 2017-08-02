@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{89088246-AE06-45E6-AE30-A3A9FCACA389}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Flight_Managment_System</RootNamespace>
+    <AssemblyName>Flight Managment System</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\AddingPassenger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddingPassenger.Designer.cs">
+      <DependentUpon>AddingPassenger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddingFlight.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddingFlight.Designer.cs">
+      <DependentUpon>AddingFlight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AdvancedConfigurations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AdvancedConfigurations.Designer.cs">
+      <DependentUpon>AdvancedConfigurations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ChangingServerData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ChangingServerData.Designer.cs">
+      <DependentUpon>ChangingServerData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FileUploader.cs" />
+    <Compile Include="Forms\DeleteFlightAndPassengers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DeleteFlightAndPassengers.Designer.cs">
+      <DependentUpon>DeleteFlightAndPassengers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Passenger.cs" />
+    <Compile Include="Forms\Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Flight.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Destination Search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Destination Search.Designer.cs">
+      <DependentUpon>Destination Search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Flight Search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Flight Search.Designer.cs">
+      <DependentUpon>Flight Search.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forms\AddingPassenger.resx">
+      <DependentUpon>AddingPassenger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddingFlight.resx">
+      <DependentUpon>AddingFlight.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AdvancedConfigurations.resx">
+      <DependentUpon>AdvancedConfigurations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChangingServerData.resx">
+      <DependentUpon>ChangingServerData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DeleteFlightAndPassengers.resx">
+      <DependentUpon>DeleteFlightAndPassengers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Destination Search.resx">
+      <DependentUpon>Destination Search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Flight Search.resx">
+      <DependentUpon>Flight Search.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\server-data.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-flight.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-passenger.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh-icon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sync-off-icon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\config-icon.jpg" />
+    <None Include="Resources\delete-flight-icon.jpg" />
+    <None Include="Resources\server-info-icon.jpg" />
+    <None Include="Resources\add-flight-icon.jpg" />
+    <None Include="Resources\main-interface.jpg" />
+    <None Include="Resources\add-user-icon.jpg" />
+    <Content Include="Resources\sync-on-icon.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
